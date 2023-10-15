@@ -94,7 +94,7 @@ public class AirportController : ControllerBase
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status202Accepted)]
-    public async Task<ActionResult<AircraftDTO>> Create([FromBody] AirportDTO airportDto)
+    public async Task<ActionResult<AirportDTO>> Create([FromBody] AirportDTO airportDto)
     {
         if (!ModelState.IsValid)
         {
